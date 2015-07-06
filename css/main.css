@@ -98,7 +98,7 @@ textarea {
 
 /*Large Background Image*/
 html {
-    background-color: #f16059;
+    background-color: #222;
     height: 100%;
     width: 100%;
 }
@@ -133,7 +133,7 @@ body {
     width: 30%;
     height: 300px;
 }
-.div-1, .div-2 { border-right: 1px solid #fff; padding-right: 30px;}
+.div-1, .div-2 { border-right: 1px solid #555; padding-right: 30px;}
 .wrapper span {font-family: 'Lora', sans-serif; font-size: 1.3em;}
 
 
