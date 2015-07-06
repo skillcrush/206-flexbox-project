@@ -98,16 +98,17 @@ textarea {
 
 /*Large Background Image*/
 html {
-    background-color: #fff;
+    background-color: #222;
     height: 100%;
     width: 100%;
 }
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
-    padding: 2em; 
+    padding: 0em 2em; 
     font-size: 1.25em;
     height: 100%;
+    color: #fff;
 }
 
 .wrapper {
@@ -119,23 +120,47 @@ body {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content:space-between;
-  align-items:center;
   font-weight: bold;   
 }
 
+header, footer {
+    width: 100%; 
+    height: auto;
+    display: flex;
+    justify-content:left;
+}
+header h1 {
+    font-family: 'Lora', sans-serif;
+    font-size: 3em; 
+}
+.main {
+    width: 100%; 
+    height:auto;
+    display: flex;
+    justify-content:center;
+    border-bottom: 1px solid #fff;
+}
+.main p {
+  font-size: 1.35em;
+}
 .div-1, .div-2, .div-3 {
     display: flex;
     justify-content:center;
     align-items:center;
-    color: #fff;
     line-height: 1.5em;
-    font-size: 1.6em;
-    background-color: #f16059;
+    font-size: 1em;
     width: 30%;
-    height: 300px;
+    height: auto;
+
 }
-
-
+.div-1 p, .div-2 p {
+  border-right: 1px solid #555;
+}
+.div-1 p, .div-2 p, .div-3 p {
+  padding-right: 20px;
+}
+footer {border-top: 1px solid #fff;}
+footer i { padding:30px 20px 0 0;}
 
 
 /* ==========================================================================
@@ -218,26 +243,24 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media all and (min-width: 600px) {
-  .aside { flex: 1 auto; }
+@media all and (max-width: 400px) {
+  body {padding:1em;}
+  .div-1, .div-2, .div-3 {
+    flex:1 100%;
+  }
+  .div-1 p, .div-2 p {border-right: none; border-bottom: 1px solid #555;}
+  footer {display: flex; justify-content:center;}
 }
 
-@media all and (min-width: 800px) {
-  .main {
+@media (min-width: 401px) and (max-width: 768px) {
+  .div-1, .div-2{
+    flex:1 50%;
   }
-  .main {
-    order: 1;
-  }
-  .aside-1  {
-    order: 2;
-  }
-  .aside-2 {
-    order: 3;
-  }
-
-  .footer {
-    order: 4;
-  }
+  .div-1 p, .div-2 p {border-right:none; padding-right: 30px;}
+  .div-3 {
+    flex:1 100%;
+    border-top: 1px solid #555;
+  } 
 }
 
 @media print,
