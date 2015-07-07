@@ -111,16 +111,16 @@ body {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  justify-content:space-between;
-  align-items:center;
-  font-weight: bold;   
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items:center;
+    font-weight: bold;   
 }
 
 .div-1, .div-2, .div-3 {
@@ -131,10 +131,16 @@ body {
     line-height: 1.5em;
     font-size: 1.25em;
     width: 30%;
-    height: 300px;
+    height: auto;
 }
-.div-1, .div-2 { border-right: 1px solid #555; padding-right: 30px;}
-.wrapper span {font-family: 'Lora', sans-serif; font-size: 1.3em;}
+.div-1, .div-2 { 
+    border-right: 1px solid #555; 
+    padding-right: 30px;
+}
+.wrapper span {
+    font-family: 'Lora', sans-serif; 
+    font-size: 1.3em;
+}
 
 
 
@@ -219,26 +225,19 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media all and (min-width: 600px) {
-  .aside { flex: 1 auto; }
+@media all and (max-width: 400px) {
+  .div-1, .div-2, .div-3 {
+    flex: 1 100%;
+    border-right: none;
+  }
 }
 
-@media all and (min-width: 800px) {
-  .main {
-  }
-  .main {
-    order: 1;
-  }
-  .aside-1  {
-    order: 2;
-  }
-  .aside-2 {
-    order: 3;
+@media all and (max-width: 768px) {
+  .div-1, .div-2, .div-3{
+    flex: 1 100%;
+    border-right: none;
   }
 
-  .footer {
-    order: 4;
-  }
 }
 
 @media print,
