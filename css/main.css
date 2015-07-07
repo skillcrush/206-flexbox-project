@@ -112,15 +112,15 @@ body {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  justify-content:space-between;
-  font-weight: bold;   
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    font-weight: bold;   
 }
 
 header, footer {
@@ -141,7 +141,7 @@ header h1 {
     border-bottom: 1px solid #fff;
 }
 .main p {
-  font-size: 1.35em;
+    font-size: 1.35em;
 }
 .div-1, .div-2, .div-3 {
     display: flex;
@@ -154,13 +154,17 @@ header h1 {
 
 }
 .div-1 p, .div-2 p {
-  border-right: 1px solid #555;
+    border-right: 1px solid #555;
 }
 .div-1 p, .div-2 p, .div-3 p {
-  padding-right: 20px;
+    padding-right: 20px;
 }
-footer {border-top: 1px solid #fff;}
-footer i { padding:30px 20px 0 0;}
+footer {
+    border-top: 1px solid #fff;
+}
+footer i { 
+    padding:30px 20px 0 0;
+}
 
 
 /* ==========================================================================
