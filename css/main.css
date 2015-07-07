@@ -122,6 +122,10 @@ body {
     justify-content:space-between;
     font-weight: bold;   
 }
+p span {
+    font-family: 'Lora', sans-serif; 
+    font-weight: bold;
+}
 
 header, footer {
     width: 100%; 
