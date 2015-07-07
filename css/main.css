@@ -132,7 +132,9 @@ body {
     width: 300px;
     height: 300px;
 }
-#content span {font-family: 'Lora', sans-serif;}
+#content span {
+    font-family: 'Lora', sans-serif;
+}
 
 
 
