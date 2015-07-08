@@ -132,12 +132,9 @@ body {
     width: 300px;
     height: 300px;
 }
-#content span {
+#content p span {
     font-family: 'Lora', sans-serif;
 }
-
-
-
 
 /* ==========================================================================
    Helper classes
