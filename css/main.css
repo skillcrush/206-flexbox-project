@@ -97,15 +97,15 @@ textarea {
 
 /*Large Background Image*/
 html {
-    background: url(../img/bkgd.jpg) no-repeat center center fixed;
+    background: url(../img/bkgd2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-   /* set height to 100% */
+   /* set height to 100% - these are important for allowing content to vertically align */
 }
 body {
-    /* set height to 100% */
+    /* set height to 100% - these are important for allowing content to vertically align */
 }
 .wrapper {
     /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
