@@ -123,12 +123,12 @@ header, footer {
 header, footer, .main {
     /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
 }
-.wrapper {
+.flex-container {
     /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center, and set flex-flow to row wrap*/
     font-weight: bold;   
 }
 
-.div-1, .div-2, .div-3 {
+.flex-items {
     /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
     color: #fff;
     line-height: 1.5em;
@@ -137,9 +137,6 @@ header, footer, .main {
     width: 30%;
     height: 200px;
 }
-
-
-
 
 /* ==========================================================================
    Helper classes
