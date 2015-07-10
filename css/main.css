@@ -94,9 +94,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
 html {
     background-color: #fff;
     height: 100%;
@@ -111,25 +108,37 @@ body {
     color: #fff;
 }
 header, footer {
-    /* Make Width 100%*/
+    width:100%;
     background-color: #222;
     height: 80px;
 }
 .main {
-    /*Make Width 100%*/
+    width:100%;
     background-color: #ccc;
     height: 250px;
 }
 header, footer, .main {
-    /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
 .flex-container {
-    /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center, and set flex-flow to row wrap*/
-    font-weight: bold;   
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items:center;
+    font-weight: bold;  
 }
 
 .flex-items {
-    /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+    display: flex;
+    justify-content:center;
+    align-items:center;
     color: #fff;
     line-height: 1.5em;
     font-size: 1.6em;
