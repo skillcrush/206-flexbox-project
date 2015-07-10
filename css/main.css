@@ -109,18 +109,17 @@ body {
     height: 100%;
 }
 
-.wrapper {
+.flex-container {
     /*add display:flex and set justify-content to space-between*/
     font-weight: bold;   
 }
 
-.div-1, .div-2, .div-3 {
+.flex-items {
     /*add display:flex and set justify-content and align-items to center*/
     color: #fff;
     line-height: 1.5em;
     font-size: 1.6em;
     background-color: #f16059;
-    width: 30%;
     height: 300px;
 }
 
