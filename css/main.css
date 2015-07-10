@@ -170,7 +170,6 @@ footer i {
     padding:30px 20px 0 0;
 }
 
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -253,19 +252,19 @@ footer i {
 
 @media all and (max-width: 400px) {
   body {padding:1em;}
-  .div-1, .div-2, .div-3 {
+  .flex-items {
     flex:1 100%;
   }
-  .div-1 p, .div-2 p {border-right: none; border-bottom: 1px solid #555;}
+  #div-1 p, #div-2 p {border-right: none; border-bottom: 1px solid #555;}
   footer {display: flex; justify-content:center;}
 }
 
 @media (min-width: 401px) and (max-width: 768px) {
-  .div-1, .div-2{
+  #div-1, #div-2{
     flex:1 50%;
   }
-  .div-1 p, .div-2 p {border-right:none; padding-right: 30px;}
-  .div-3 {
+  #div-1 p, #div-2 p {border-right:none; padding-right: 30px;}
+  #div-3 {
     flex:1 100%;
     border-top: 1px solid #555;
   } 
