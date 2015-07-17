@@ -202,25 +202,11 @@ body {
    ========================================================================== */
 
 @media all and (min-width: 600px) {
-  .aside { flex: 1 auto; }
+
 }
 
 @media all and (min-width: 800px) {
-  .main {
-  }
-  .main {
-    order: 1;
-  }
-  .aside-1  {
-    order: 2;
-  }
-  .aside-2 {
-    order: 3;
-  }
 
-  .footer {
-    order: 4;
-  }
 }
 
 @media print,
