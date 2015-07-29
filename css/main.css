@@ -110,7 +110,7 @@ body {
     height: 100%;
 }
 
-.wrapper {
+.flex-container {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -123,7 +123,7 @@ body {
     font-weight: bold;   
 }
 
-.div-1, .div-2, .div-3 {
+.flex-items {
     display: flex;
     justify-content:center;
     align-items:center;
@@ -133,11 +133,12 @@ body {
     width: 30%;
     height: auto;
 }
-.div-1, .div-2 { 
+#div-1, #div-2 { 
     border-right: 1px solid #555; 
     padding-right: 30px;
 }
-.wrapper span {
+
+.flex-container span {
     font-family: 'Lora', sans-serif; 
     font-size: 1.3em;
 }
@@ -226,18 +227,17 @@ body {
    ========================================================================== */
 
 @media all and (max-width: 400px) {
-  .div-1, .div-2, .div-3 {
-    flex: 1 100%;
-    border-right: none;
-  }
+
 }
 
 @media all and (max-width: 768px) {
-  .div-1, .div-2, .div-3{
+  .flex-items{
     flex: 1 100%;
     border-right: none;
   }
-
+  #div-1, #div-2, #div-3{
+    border-right: none;
+  }
 }
 
 @media print,
