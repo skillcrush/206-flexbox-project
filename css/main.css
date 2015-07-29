@@ -109,21 +109,24 @@ body {
     height: 100%;
 }
 
-.wrapper {
+.flex-container {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     justify-content:space-between;
-    align-items:center;
     font-weight: bold;   
 }
 
-.div-1, .div-2, .div-3 {
+.flex-items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     color: #fff;
     line-height: 1.5em;
     font-size: 1.6em;
